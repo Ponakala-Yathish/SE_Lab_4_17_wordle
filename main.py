@@ -1,4 +1,6 @@
-from game import WordleGame
+from game import WordleGame, choose_mode
 
 if __name__ == "__main__":
-    WordleGame().run()
+    length = choose_mode()
+    game = WordleGame(length)
+    game.run()
